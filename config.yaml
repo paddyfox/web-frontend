@@ -1,0 +1,53 @@
+development:
+  server:
+    PORT: 3000
+  app:
+    NAME: web-frontend
+
+  services:
+    dataGateway:
+      v1:
+        NAME: data-gateway
+        URL: http://localhost:8733/data-gateway/v1
+        TIMEOUT_MILLISECOND: 4000
+
+  logs:
+    app: ./logs/web-frontend.log
+    error: ./logs/web-frontend.error.log
+    console: false
+    dateRotate: false
+    maxFiles: 3
+    meta:
+      appname: txt.web-frontend
+      apptype: txt.nodejs
+      request_header_x_unique_id: req.x-request-id
+    requestMeta:
+      remoteAddress: remove_field
+      hostname: remove_field
+
+production:
+  server:
+    PORT: 3000
+  app:
+    NAME: web-frontend
+
+  services:
+    dataGateway:
+      v1:
+        NAME: data-gateway
+        URL: http://localhost:8733/data-gateway/v1
+        TIMEOUT_MILLISECOND: 4000
+
+  logs:
+    app: ./logs/web-frontend.log
+    error: ./logs/web-frontend.error.log
+    console: false
+    dateRotate: false
+    maxFiles: 3
+    meta:
+      appname: txt.web-frontend
+      apptype: txt.nodejs
+      request_header_x_unique_id: req.x-request-id
+    requestMeta:
+      remoteAddress: remove_field
+      hostname: remove_field

@@ -1,0 +1,15 @@
+FROM node:12-alpine
+
+ARG http_proxy
+ARG https_proxy
+ARG no_proxy
+
+WORKDIR /app
+COPY ./package.json /app/package.json
+COPY ./ops/start.sh /usr/share/scripts/start.sh
+
+RUN chmod +x /usr/share/scripts/start.sh
+
+ENV NPM_CONFIG_LOGLEVEL info
+
+ENTRYPOINT /usr/share/scripts/start.sh

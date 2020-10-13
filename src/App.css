@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 4vmin;
+  pointer-events: none;
+}
+
+.App-section {
+  font-size: calc(10px + 2vmin);
+  min-height: 20vh;
+  height: 66vmin;
+}
+
+.App-link {
+  color: #61dafb;
+}
