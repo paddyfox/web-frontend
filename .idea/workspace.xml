@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="e23f8479-7519-484f-b55d-8a61afa42ed8" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="e23f8479-7519-484f-b55d-8a61afa42ed8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+>>>>>>> 57dd53c... DSLR-34 Build base React app
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j8aK0FzbpVlATPn92Ns9IW0WYk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e23f8479-7519-484f-b55d-8a61afa42ed8" name="Default Changelist" comment="" />
+      <created>1603188104980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603188104980</updated>
+      <workItem from="1603188106276" duration="3688000" />
+      <workItem from="1603709485231" duration="1449000" />
+      <workItem from="1604308921330" duration="599000" />
+      <workItem from="1604339411629" duration="598000" />
+      <workItem from="1604509131840" duration="599000" />
+      <workItem from="1604934377128" duration="1236000" />
+      <workItem from="1605959264559" duration="601000" />
+      <workItem from="1605960107948" duration="1210000" />
+      <workItem from="1605963380777" duration="207000" />
+      <workItem from="1605963668360" duration="57000" />
+<<<<<<< HEAD
+      <workItem from="1605963912308" duration="5947000" />
+=======
+      <workItem from="1605963912308" duration="6278000" />
+>>>>>>> 57dd53c... DSLR-34 Build base React app
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1603465588936">
+      <screen x="-1920" y="-44" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1280.713/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603465588936" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1280.714/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603190880393" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1603465588935">
+      <screen x="-1920" y="-44" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1280.713/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603465588935" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1280.714/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603190880392" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1603465588934">
+      <screen x="-1920" y="-44" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1280.713/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603465588934" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1280.714/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603190880391" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1603465588935">
+      <screen x="-1920" y="-44" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1280.713/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603465588935" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1280.714/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603190880392" />
+    <state x="-1021" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605964601231">
+      <screen x="-1920" y="-44" width="1920" height="1057" />
+    </state>
+    <state x="-1021" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.713/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1605964601231" />
+    <state x="-1630" y="41" width="1593" height="841" key="find.popup" timestamp="1605975990691">
+      <screen x="-1920" y="-44" width="1920" height="1057" />
+    </state>
+    <state x="-1630" y="41" width="1593" height="841" key="find.popup/0.23.1280.713/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1605975990691" />
+    <state x="-1630" y="41" width="1593" height="841" key="find.popup/0.23.1280.714/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1603191374415" />
+    <state x="-1230" y="328" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1605963429295">
+      <screen x="-1920" y="-44" width="1920" height="1057" />
+    </state>
+    <state x="-1230" y="328" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1280.713/-1920.-44.1920.1057@-1920.-44.1920.1057" timestamp="1605963429295" />
+  </component>
+</project>

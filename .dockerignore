@@ -1,0 +1,12 @@
+# Ignore all files by default.
+*
+
+# White list only the required files.
+!src/
+!public/
+!package.json
+!logs/
+!config.yaml
+!build/
+!ops/
+!server/

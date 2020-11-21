@@ -1,0 +1,47 @@
+FROM node:12-alpine as react-build
+
+ENV NPM_CONFIG_LOGLEVEL info
+WORKDIR /app
+VOLUME ["/app/node_modules"]
+
+ARG http_proxy
+ARG https_proxy
+ARG no_proxy
+
+ARG BUILD_FORCE
+ENV BUILD_FORCE "$BUILD_FORCE"
+
+COPY . .
+RUN if [ "$BUILD_FORCE" = "yes" ]; \
+    then yarn install --silent --ignore-optional && yarn build; \
+    else echo 'Using prebuilt app in /build directory'; \
+    fi;
+
+### Production stage
+FROM 113355358853.dkr.ecr.eu-west-1.amazonaws.com/dcs/fro/node:latest
+
+WORKDIR /app
+# VOLUME ["/app/node_modules"]
+
+ARG VERSION
+ENV VERSION "$VERSION"
+
+ARG BUILD_NUMBER
+ENV BUILD_NUMBER "$BUILD_NUMBER"
+
+ARG BUILD_FORCE
+ENV BUILD_FORCE "$BUILD_FORCE"
+
+COPY --from=react-build /app /app
+
+### Building /version endpoint".
+RUN if [ "$BUILD_FORCE" = "yes" ]; \
+    then yarn install --prod --ignore-optional; \
+    else echo 'Using prebuilt app in /build directory'; \
+    fi;
+
+COPY ./ops/run.sh .
+
+RUN chmod +x run.sh && mkdir -p /etc/consul_template.d
+
+ENTRYPOINT [ "/app/run.sh" ]
