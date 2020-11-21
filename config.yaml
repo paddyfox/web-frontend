@@ -9,7 +9,7 @@ development:
       v1:
         NAME: data-gateway
         URL: http://localhost:8733/data-gateway/v1
-        TIMEOUT_MILLISECOND: 4000
+        TIMEOUT_MILLISECOND: 10000
 
   logs:
     app: ./logs/web-frontend.log
@@ -36,7 +36,7 @@ production:
       v1:
         NAME: data-gateway
         URL: http://localhost:8733/data-gateway/v1
-        TIMEOUT_MILLISECOND: 4000
+        TIMEOUT_MILLISECOND: 10000
 
   logs:
     app: ./logs/web-frontend.log

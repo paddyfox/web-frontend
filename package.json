@@ -1,5 +1,5 @@
 {
-  "name": "web-frontend",
+  "name": "web-lost-stolen-examiner",
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
@@ -10,25 +10,28 @@
     "@hookform/resolvers": "^1.0.0",
     "axios": "^0.20.0",
     "body-parser": "^1.19.0",
+    "date-fns": "^2.16.1",
     "express": "^4.17.1",
     "govuk-frontend": "^3.9.1",
     "govuk-react-jsx": "^4.0.3",
     "ignore-styles": "^5.0.1",
+    "ramda": "^0.27.1",
     "react": "^16.13.1",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0",
+    "xregexp": "^4.4.0",
     "yenv": "^2.1.1",
     "yup": "^0.29.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-flow": "^7.12.1",
-    "@testing-library/dom": "^7.26.3",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/dom": "^7.26.6",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.2",
+    "@testing-library/user-event": "^12.2.2",
     "babel-eslint": "^10.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
@@ -39,6 +42,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.3",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "jest-mock-axios": "^4.2.1",
     "mutationobserver-shim": "^0.3.7",
     "node-sass": "^4.14.1",
     "object-path": "0.11.5",
@@ -53,11 +57,11 @@
     "start": "export PORT=3001 && react-scripts start",
     "ssr": "node server/index.js",
     "ssr:local": "node server/index.js",
-    "ssr:local-file": "node server/index.js > ./logs/web-frontend.log 2>&1",
+    "ssr:local-file": "node server/index.js > ./logs/web-lost-stolen-examiner.log 2>&1",
     "build": "react-scripts build",
-    "test": "export CI=false && react-scripts test",
+    "test": "export CI=true && react-scripts test",
     "test:watch": "react-scripts test --silent=false --watchAll=true",
-    "test:coverage": "export CI=false && react-scripts test --coverage --watchAll=false",
+    "test:coverage": "export CI=true && react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx,.js src/"
   },
@@ -74,12 +78,17 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 20,
-        "functions": 20,
-        "lines": 20,
-        "statements": 20
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
       }
-    }
+    },
+    "transform": {
+      "^.+\\.(ts|js|jsx|html)$'": "babel-jest"
+    },
+    "resetMocks": true,
+    "clearMocks": true
   },
   "browserslist": {
     "production": [

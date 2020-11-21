@@ -12,7 +12,9 @@ import Cookies from "./pages/Cookies";
 import './App.css';
 
 const headerProps = {
-  serviceName: 'Kainos Testing',
+  serviceUrlHref: '/',
+  navigationClassName: 'govuk-header__navigation--end',
+  productName:'Kainos Testing',
   navigation: [
     {
       children: 'Home',

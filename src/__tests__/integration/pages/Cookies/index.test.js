@@ -14,5 +14,4 @@ describe('Cookies', () => {
     const homeText = testSubject('I am the Cookies page', { exact: false });
     expect(homeText).toBeInTheDocument();
   });
-
 });

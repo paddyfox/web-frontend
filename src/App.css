@@ -1,18 +1,20 @@
-.App {
-  text-align: center;
+.govuk-header__logotype {
+  display: none;
 }
 
-.App-logo {
-  height: 4vmin;
-  pointer-events: none;
+nav {
+  display: inline;
+  float: right;
 }
 
-.App-section {
-  font-size: calc(10px + 2vmin);
-  min-height: 20vh;
-  height: 66vmin;
+.govuk-header__navigation {
+  display: inline;
 }
 
-.App-link {
-  color: #61dafb;
+.govuk-main-wrapper {
+  padding-top: 0
+}
+
+.govuk-back-link__padding {
+  margin-bottom: 40px;
 }

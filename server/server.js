@@ -7,21 +7,12 @@ import path from 'path';
 import axios from 'axios';
 import bodyParser from 'body-parser';
 import ReactDOMServer from 'react-dom/server';
+import React, { Component } from 'react';
 
 import { App } from '../src/App';
 
 // Injected via consul during deployment.
 const env = yenv('./config.yaml');
-
-const extendLoggerConfig = {
-  app: env.logs.app,
-  error: env.logs.error,
-  console: env.logs.console,
-  dateRotate: env.logs.dateRotate,
-  maxFiles: env.logs.maxFiles,
-  meta: env.logs.meta,
-  requestMeta: env.logs.requestMeta,
-};
 
 const SERVICE_NAME = env.services.dataGateway.v1.NAME || 'data-gateway';
 const VERSION = process.env.VERSION || '0.0.1';
@@ -64,23 +55,23 @@ app.get('/version', (req, res) => {
     let version = {};
     try {
       let versionData = data.replace(
-        '$VERSION',
-        `${VERSION}`
+          '$VERSION',
+          `${VERSION}`
       );
       versionData = versionData.replace(
-        '$BUILD_NUMBER',
-        `${BUILD_NUMBER}`
+          '$BUILD_NUMBER',
+          `${BUILD_NUMBER}`
       );
 
       version = JSON.parse(versionData);
     } catch (err) {
-      logger.error(err);
+      console.error(err);
       return res.status(500).send('Sorry, could not parse the template for the version.');
     }
 
-    logger.info('Version /version uri has been accessed.');
+    console.info('Version /version uri has been accessed.');
     return res.json(
-      version
+        version
     );
   });
 });
@@ -89,14 +80,14 @@ app.get('/version', (req, res) => {
 app.get('/*', (req, res) => {
   fs.readFile(path.resolve('./build/index.html'), 'utf-8', (err, data) => {
     if (err) {
-      logger.error(err);
+      console.error(err);
       return res.status(500).send('Sorry, something went wrong with the server side rendering.');
     }
     return res.send(
-      data.replace(
-        '<div id="root"></div>',
-        `<div id="root">${ReactDOMServer.renderToString(App)}</div>`
-      )
+        data.replace(
+            '<div id="root"></div>',
+            `<div id="root">${ReactDOMServer.renderToString(App)}</div>`
+        )
     );
   });
 });
@@ -124,7 +115,7 @@ app.post('/create-record', (req, res) => {
         details: response.data
       };
 
-      logger.error(errMessage);
+      console.error(errMessage);
 
       return res.status(500).send(errMessage);
     } else {
@@ -135,11 +126,11 @@ app.post('/create-record', (req, res) => {
         details: response.data
       };
 
-      logger.error(errMessage);
+      console.error(errMessage);
       return res.status(502).send(errMessage);
     }
   }).catch((err) => {
-    logger.error(err);
+    console.error(err);
     const errMessage = {
       status: 'error',
       code: 500,
@@ -152,5 +143,5 @@ app.post('/create-record', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  logger.info(`Listening on port ${PORT}`);
+  console.info(`Listening on port ${PORT}`);
 });

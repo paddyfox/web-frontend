@@ -4,5 +4,6 @@
     "name": "web-frontend",
     "buildNumber": "$BUILD_NUMBER",
     "version": "$VERSION"
-  }
+  },
+  "inherit": true
 }
